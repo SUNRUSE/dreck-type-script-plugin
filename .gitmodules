@@ -1,0 +1,6 @@
+[submodule "submodules/bats-core"]
+	path = submodules/bats-core
+	url = https://github.com/bats-core/bats-core
+[submodule "submodules/dreck"]
+	path = submodules/dreck
+	url = https://github.com/SUNRUSE/dreck

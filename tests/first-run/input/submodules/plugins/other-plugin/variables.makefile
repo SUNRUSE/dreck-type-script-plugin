@@ -1,0 +1,1 @@
+DRECK_INTERMEDIATE_TYPE_SCRIPT_PATHS += ./from-intermediate.ts

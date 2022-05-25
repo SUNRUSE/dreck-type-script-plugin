@@ -104,8 +104,8 @@
     "useUnknownInCatchVariables": true
   },
   "include": [
+    "./submodules/plugins/*/src/**.ts",
     "./src/**/*.ts",
-    "./ephemeral/intermediate/**/*.ts",
-    "./submodules/plugins/*/src/**.ts"
+    "./ephemeral/intermediate/**/*.ts"
   ]
 }

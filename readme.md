@@ -1,6 +1,6 @@
 # Dreck TypeScript Plugin [![License](https://img.shields.io/github/license/sunruse/dreck-type-script-plugin.svg)](https://github.com/sunruse/dreck-type-script-plugin/blob/master/license) [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)
 
-Compiles all `*.ts` source files (and specific `*.ts` intermediate files) to a single Javascript intermediate file.
+Compiles specified TypeScript files to a single Javascript file.
 
 ## Dependencies
 
@@ -53,21 +53,17 @@ jobs:
 Run the following in a Bash shell at the root of your project:
 
 ```bash
-git submodule add https://github.com/sunruse/dreck-type-script-plugin submodules/plugins/type-script
+git submodule add https://github.com/sunruse/dreck-type-script-plugin plugins/type-script
 ```
 
 On the next build, a `tsconfig.json` file will be created in the root of your repository.  You should commit this and may customize it to your project's requirements.
 
-Note that the `tsconfig.json` file will read source files from `./src/**/*.ts` and `./submodules/plugins/*/**/*.ts` rather than `./ephemeral/src/**/*.ts`.  This is so that IDE tooling is aware of the real source files and does not present a temporary copy when clicking on paths in error messages.
+
+
+## Input
+
+This plugin includes every TypeScript file in the `DRECK_TYPE_SCRIPT_OUTPUT_JAVASCRIPT_PATHS` Make variable as an input TypeScript file.
 
 ## Output
 
-This plugin writes a single Javascript file to `./ephemeral/intermediate/index.js` by default; this path is also appended to the `DRECK_INTERMEDIATE_JAVASCRIPT_PATHS` Make variable.  It is expected that you install another plugin to minify this file as either `./ephemeral/dist/index.js` or a file referenced by the `DRECK_HTML_VARIABLE_PATHS` Make variable.
-
-## Rendering of generated TypeScript
-
-By default, this plugin will compile all `*.ts` files in `./src/**` and `./submodules/plugins/*/src/**`.
-
-It can additionally compile TypeScript files in `./ephemeral/intermediate`, but requires that their paths be appeneded to the `DRECK_INTERMEDIATE_TYPE_SCRIPT_PATHS` Make variable.
-
-For example, if `DRECK_INTERMEDIATE_TYPE_SCRIPT_PATHS` contained `./a/b.ts`, the TypeScript file at `./ephemeral/intermediate/a/b.ts` would be included in the build.
+This plugin writes a single Javascript file to `./plugins/type-script/generated/index.js` by default; this path is also appended to the `DRECK_TYPE_SCRIPT_OUTPUT_JAVASCRIPT_PATHS` Make variable.

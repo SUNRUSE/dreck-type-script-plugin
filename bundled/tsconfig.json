@@ -73,7 +73,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "outDir": "",
-    "outFile": "./ephemeral/intermediate/index.js",
+    "outFile": "./plugins/type-script/generated/index.js",
     "paths": {},
     "plugins": [],
     "preserveConstEnums": false,
@@ -104,8 +104,6 @@
     "useUnknownInCatchVariables": true
   },
   "include": [
-    "./submodules/plugins/*/src/**.ts",
-    "./src/**/*.ts",
-    "./ephemeral/intermediate/**/*.ts"
+    "./submodules/plugins/*/src/**.ts"
   ]
 }

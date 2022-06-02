@@ -1,6 +1,6 @@
-[submodule "submodules/bats-core"]
-	path = submodules/bats-core
+[submodule "bats-core"]
+	path = bats-core
 	url = https://github.com/bats-core/bats-core
-[submodule "submodules/dreck"]
-	path = submodules/dreck
+[submodule "dreck"]
+	path = dreck
 	url = https://github.com/SUNRUSE/dreck

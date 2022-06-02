@@ -19,5 +19,5 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         node-version: 12
-    - run: ./submodules/bats-core/bin/bats ./tests/run.bash
+    - run: ./bats-core/bin/bats ./tests/run.bash
       shell: bash

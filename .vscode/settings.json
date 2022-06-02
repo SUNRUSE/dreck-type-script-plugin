@@ -11,6 +11,7 @@
     "**/.git": true,
     "**/.DS_Store": true,
     "node_modules": true,
-    "npm-install-marker": true
+    "npm-install-marker": true,
+    "tsconfig.json": true
   }
 }

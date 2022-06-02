@@ -1,6 +1,6 @@
 {
   "name": "dreck-type-script-plugin",
-  "description": "Compiles all *.ts source files (and specific *.ts intermediate files) to a single Javascript intermediate file.",
+  "description": "Compiles specified TypeScript files to a single Javascript file.",
   "version": "0.0.0",
   "engines": {
     "node": ">=10.19.0"

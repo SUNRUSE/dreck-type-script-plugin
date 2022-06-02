@@ -58,8 +58,6 @@ git submodule add https://github.com/sunruse/dreck-type-script-plugin plugins/ty
 
 On the next build, a `tsconfig.json` file will be created in the root of your repository.  You should commit this and may customize it to your project's requirements.
 
-
-
 ## Input
 
 This plugin includes every TypeScript file in the `DRECK_TYPE_SCRIPT_INPUT_TYPE_SCRIPT_PATHS` Make variable as an input TypeScript file.

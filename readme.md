@@ -62,7 +62,7 @@ On the next build, a `tsconfig.json` file will be created in the root of your re
 
 ## Input
 
-This plugin includes every TypeScript file in the `DRECK_TYPE_SCRIPT_OUTPUT_JAVASCRIPT_PATHS` Make variable as an input TypeScript file.
+This plugin includes every TypeScript file in the `DRECK_TYPE_SCRIPT_INPUT_TYPE_SCRIPT_PATHS` Make variable as an input TypeScript file.
 
 ## Output
 

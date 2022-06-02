@@ -3,7 +3,7 @@
 	touch $@
 
 ./plugins/type-script/tsconfig.json: $(DRECK_TYPE_SCRIPT_INPUT_TYPE_SCRIPT_PATHS)
-	node ./plugins/type-script/generate-tsconfig.js $<
+	node ./plugins/type-script/generate-tsconfig.js $^
 
 $(DRECK_TYPE_SCRIPT_OUTPUT_JAVASCRIPT_PATHS): ./plugins/type-script/tsconfig.json ./plugins/type-script/npm-install-marker
 	mkdir -p $(dir $@)
